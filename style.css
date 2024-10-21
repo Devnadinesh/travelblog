@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Caveat:wght@400..700&family=Concert+One&family=DM+Serif+Display:ital@0;1&family=Gupter:wght@400;500;700&family=Inconsolata:wght@200..900&family=Kalnia+Glaze:wght@100..700&family=Mukta:wght@200;300;400;500;600;700;800&family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sevillana&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Mukta", sans-serif;
+}
+
+.bg-image{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    filter: brightness(0.6);
+    object-fit: cover;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+nav.navbar{
+    position: sticky;
+    top: 0px;
+}
+
+a{
+    position: relative;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+a:after{
+    content:"" ;
+    position: absolute;
+    background-color: darkblue;
+    height: 3px;
+    width: 0;
+    left: 0px;
+    bottom: -7px;
+}
+
+a:hover::after{
+    width: 100%;
+}
+
+#join{
+    margin-left: 70px;
+}
+
+h3{
+    margin-left: 20px;
+    color: white;  
+}
+
+.container{
+    width: 300px;
+}
+
+.entryarea{
+    position: relative;
+    height: 80px;
+    line-height: 80px;
+}
+
+#name{
+position: absolute;
+width: 400px;
+outline: none;
+font-size: 2.2em;
+padding: 0 30px;
+line-height: 80px;
+border-radius: 10px;
+border: 2px solid white;
+background: transparent;
+transition: 0.1s ease;
+z-index: 1111;
+}
+
+.labelline{
+    position: absolute;
+    color: white;
+    font-size: 1.6em;
+    padding: 0 25px;
+    margin: 0 10px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.2s ease;
+}
+
+#name:focus,
+#name:valid{
+    color: darkblue;
+    border: 4px solid rgb(236, 244, 246);
+}
+
+#name:focus + .labelline,
+#name:valid + .labelline{
+    color: rgb(235, 235, 245);
+    height: 30px;
+    line-height: 30px;
+    transform:translate(-15px, -16px)scale(0.88) ;
+    padding: 0 12px;
+    z-index: 1111;
+}
+
+#mail{
+position: absolute;
+width: 400px;
+outline: none;
+font-size: 2.2em;
+padding: 0 30px;
+line-height: 80px;
+border-radius: 10px;
+border: 2px solid white;
+background: transparent;
+transition: 0.1s ease;
+z-index: 1111;
+margin-left: 500px;
+}
+
+.labelline1{
+    position: absolute;
+    color: white;
+    font-size: 1.6em;
+    padding: 0 25px;
+    margin-left: 500px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.2s ease;
+}
+
+#mail:focus,
+#mail:valid{
+    color: darkblue;
+    border: 4px solid rgb(236, 244, 246);
+}
+
+#mail:focus + .labelline1,
+#mail:valid + .labelline1{
+    color: rgb(235, 235, 245);
+    height: 30px;
+    line-height: 30px;
+    transform:translate(-15px, -16px)scale(0.88) ;
+    padding: 0 12px;
+    z-index: 1111;
+}
+
+.parent{
+     position: relative;
+     width: 100%;
+     height: 700px;
+     margin-top: 150px;
+     background-color: white;
+}
+
+.left{
+    position: absolute;
+    border: 1px solid black;
+    background-color: white;
+    width: 600px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 150px;
+    z-index: 1;
+}
+
+.right{
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 100px;
+
+}
+
+.row{
+    width: 100%;
+    height: 400px;
+    margin: 20px;
+
+}
+
+.card{
+  margin-left: 80px;
+  
+}
+
+.place {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    
+}
+
+.place .card{
+    margin: 10px;
+}
+
+.place .card:hover{
+    transform: scale(1.2);
+}
+
+.gears{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.gears .card{
+  margin-left: -15px;
+  margin-top: 20px;
+}
+
+.gears .card:hover{
+    transform: scale(1.2);
+}
+
+
+   
